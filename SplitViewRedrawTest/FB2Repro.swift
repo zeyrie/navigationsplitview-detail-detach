@@ -1,7 +1,7 @@
 //
 //  FB2Repro.swift
 //
-//  FB2 — NavigationSplitView (regular width): changing the sidebar selection while the
+//  FB24753158 — NavigationSplitView (regular width): changing the sidebar selection while the
 //  detail's NavigationStack has pushed content detaches the incoming detail root.
 //  Its `.task` is cancelled and re-run — the load runs twice on every such switch.
 //

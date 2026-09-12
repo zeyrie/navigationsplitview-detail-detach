@@ -1,4 +1,4 @@
-# FB Report 1
+# FB24753146
 
 **Title:** NavigationSplitView (compact): NavigationStack in the detail column causes the pushed detail view to be detached and re-inserted mid-push — `.task` is cancelled; with NavigationLink rows the view is never re-attached and hangs
 
@@ -135,3 +135,4 @@ struct ContentView: View {
 - Reproduced on device and simulator.
 - Independent of how the selection is stored (`@State` value vs `@Observable` class property) and of how the binding is created (`@Bindable` vs `@State` projection) — all combinations were tested; only the presence of the detail-column `NavigationStack` (or a `navigationDestination` on the detail root) flips the behavior.
 - Likely related to the lifecycle double-execution regression discussed in forums thread 765401 (task/onAppear/onDisappear running twice, DTS-confirmed as a potential bug).
+- Companion report for the regular-width behavior of the same composition: FB24753158.

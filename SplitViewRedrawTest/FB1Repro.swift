@@ -1,7 +1,7 @@
 //
 //  FB1Repro.swift
 //
-//  FB1 — NavigationSplitView (compact): a NavigationStack in the detail column causes
+//  FB24753146 — NavigationSplitView (compact): a NavigationStack in the detail column causes
 //  the pushed detail view to be detached and re-inserted mid-push. The `.task` is
 //  cancelled; with NavigationLink rows the view is never re-attached and hangs.
 //

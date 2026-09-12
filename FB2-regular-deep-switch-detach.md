@@ -1,4 +1,4 @@
-# FB Report 2
+# FB24753158
 
 **Title:** NavigationSplitView (regular width): changing the sidebar selection while the detail's NavigationStack has pushed content detaches the incoming detail root — `.task` cancelled and re-run on every such switch
 
@@ -139,4 +139,4 @@ struct ContentView: View {
 
 - Selection changes with the stack at root are clean; only switch-while-pushed churns — fully deterministic, reproduces every time.
 - Binding the path (`NavigationStack(path:)`) and clearing it synchronously with the selection change does not prevent the detach.
-- Companion report filed for the compact-width behavior of the same composition (detail-column NavigationStack breaking pushes on iPhone).
+- Companion report for the compact-width behavior of the same composition (detail-column NavigationStack breaking pushes on iPhone): FB24753146.
